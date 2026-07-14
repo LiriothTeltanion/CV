@@ -46,3 +46,21 @@ GitHub: [@LiriothTeltanion](https://github.com/LiriothTeltanion)
 
 This repository is the single canonical CV area for Kevin. Christopher's CV
 remains in the separate `ChristopherRodriguezCVOnline` repository.
+
+---
+
+<!-- NOVA-CV-VERIFICATION:START -->
+## ✅ Portfolio verification & current focus
+
+This CV repository is designed to be easy to verify against real public work:
+
+- **Developer profile:** [github.com/LiriothTeltanion](https://github.com/LiriothTeltanion)
+- **Flagship application:** [Nova Music Lab](https://liriothteltanion.github.io/NovaMusicLab/) — React and TypeScript listening-history analytics
+- **Learning evidence:** [Fullstack2026](https://github.com/LiriothTeltanion/Fullstack2026) — Developers Institute exercises and project progression
+- **Languages:** Spanish, English and Hebrew, including multilingual and RTL interface work
+- **Current focus:** completing the remaining full-stack course work, strengthening deployment readiness and turning agent-assisted development into reviewed, testable portfolio evidence
+
+Each language version is maintained as part of the same professional identity:
+**Kevin Cusnir**, with **Lirioth Teltanion** as the creative identity used across
+music technology, visual systems and experimental product work.
+<!-- NOVA-CV-VERIFICATION:END -->
