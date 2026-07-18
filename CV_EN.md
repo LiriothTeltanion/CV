@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/cv-banner.svg" width="100%" alt="Kevin Cusnir multilingual professional CV banner with the Lirioth Teltanion creative identity and KC star LT signature" />
+</p>
+
 # Kevin Cusnir — Curriculum Vitae
 
 **Junior Frontend & Full-Stack Developer · Creative Technologist**

@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/cv-banner.svg" width="100%" alt="Kevin Cusnir multilingual professional CV banner with the Lirioth Teltanion creative identity, English, Spanish and Hebrew positioning, and the KC star LT signature" />
+</p>
+
 # 📄 Kevin Cusnir — Multilingual Professional CV
 
 This repository is the canonical home for Kevin Cusnir's recruiter-facing CV in three languages.
@@ -5,6 +9,11 @@ This repository is the canonical home for Kevin Cusnir's recruiter-facing CV in 
 - [🇬🇧 English CV](./CV_EN.md)
 - [🇪🇸 Currículum en español](./CV_ES.md)
 - [🇮🇱 קורות חיים בעברית](./CV_HE.md)
+
+The shared static banner keeps all three versions visually consistent without
+animation, external dependencies or remotely hosted assets. The upload-ready
+repository social card is available at
+[`assets/social/cv-social-preview.png`](./assets/social/cv-social-preview.png).
 
 ## Recruiter overview
 
@@ -39,6 +48,6 @@ python tools/verify_cv.py
 
 The verifier checks identity, contact links, multilingual project parity, version/test evidence, education boundaries and stale Ivrit release claims without network access.
 
-**CV system version:** `1.0.0` · **Creative signature:** KC ✦ LT
+**CV system version:** `1.1.0` · **Creative signature:** KC ✦ LT
 
 > Christopher's CV is maintained separately in the `ChristopherRodriguezCVOnline` repository.

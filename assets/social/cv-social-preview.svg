@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">Kevin Cusnir multilingual CV social preview</title>
+  <desc id="description">Blue recruiter-facing social card for Kevin Cusnir and Lirioth Teltanion with frontend, full-stack and creative technology positioning, EN ES HE language support and KC star LT signature.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061225" />
+      <stop offset="0.54" stop-color="#0a2341" />
+      <stop offset="1" stop-color="#08182e" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#66ddff" />
+      <stop offset="0.5" stop-color="#3b82f6" />
+      <stop offset="1" stop-color="#8b5cf6" />
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#3b82f6" stop-opacity="0.42" />
+      <stop offset="1" stop-color="#3b82f6" stop-opacity="0" />
+    </radialGradient>
+    <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse">
+      <path d="M52 0H0V52" fill="none" stroke="#7dd3fc" stroke-opacity="0.075" />
+    </pattern>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="9" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#background)" />
+  <rect width="1280" height="640" fill="url(#grid)" />
+  <circle cx="1036" cy="282" r="330" fill="url(#halo)" />
+  <path d="M0 532C226 448 388 574 612 512C826 454 1022 470 1280 386V640H0Z" fill="#38bdf8" fill-opacity="0.06" />
+  <path d="M0 560C242 474 406 600 636 538C864 478 1034 500 1280 424" fill="none" stroke="url(#accent)" stroke-opacity="0.5" stroke-width="3" />
+  <rect x="3" y="3" width="1274" height="634" rx="28" fill="none" stroke="#64dbff" stroke-opacity="0.58" stroke-width="6" />
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="70" y="62" width="360" height="46" rx="23" fill="#0e3158" stroke="#57d5ff" stroke-opacity="0.7" />
+    <text x="250" y="92" fill="#d5f5ff" font-size="18" font-weight="750" letter-spacing="2" text-anchor="middle">MULTILINGUAL PROFESSIONAL CV</text>
+
+    <text x="70" y="206" fill="#ffffff" font-size="73" font-weight="780" letter-spacing="-2">Kevin Cusnir</text>
+    <text x="74" y="264" fill="url(#accent)" font-size="36" font-weight="680" letter-spacing="1.5">Lirioth Teltanion</text>
+    <text x="74" y="334" fill="#e8f7ff" font-size="30" font-weight="650">Junior Frontend &amp; Full-Stack Developer</text>
+    <text x="74" y="376" fill="#bfdcff" font-size="26">Creative Technologist · Accessible multilingual UX</text>
+
+    <g font-size="18" font-weight="720" text-anchor="middle">
+      <rect x="72" y="424" width="112" height="44" rx="22" fill="#0f3158" stroke="#3b82f6" />
+      <text x="128" y="452" fill="#eef9ff">React</text>
+      <rect x="198" y="424" width="146" height="44" rx="22" fill="#0f3158" stroke="#3b82f6" />
+      <text x="271" y="452" fill="#eef9ff">TypeScript</text>
+      <rect x="358" y="424" width="124" height="44" rx="22" fill="#0f3158" stroke="#3b82f6" />
+      <text x="420" y="452" fill="#eef9ff">Python</text>
+      <rect x="496" y="424" width="92" height="44" rx="22" fill="#0f3158" stroke="#3b82f6" />
+      <text x="542" y="452" fill="#eef9ff">SQL</text>
+    </g>
+
+    <text x="74" y="530" fill="#b8d7ea" font-size="20">English · Español · עברית  |  Beersheba, Israel</text>
+    <text x="74" y="584" fill="#84cdec" font-size="18" font-weight="650">github.com/LiriothTeltanion</text>
+
+    <g transform="translate(865 152)">
+      <circle cx="176" cy="144" r="180" fill="#061326" fill-opacity="0.7" stroke="#58d8ff" stroke-opacity="0.5" stroke-width="3" />
+      <circle cx="176" cy="144" r="145" fill="none" stroke="#60a5fa" stroke-opacity="0.34" stroke-width="2" />
+      <path d="M176 -18V306M14 144H338" stroke="#38bdf8" stroke-opacity="0.13" />
+      <text x="70" y="164" fill="#edfaff" font-size="70" font-family="Segoe Script, Segoe UI, cursive" font-style="italic" font-weight="700">KC</text>
+      <g transform="translate(176 144)" filter="url(#glow)">
+        <path d="M0 -38L9 -9L38 0L9 9L0 38L-9 9L-38 0L-9 -9Z" fill="#73dcff" />
+        <circle r="6" fill="#ffffff" />
+      </g>
+      <text x="214" y="164" fill="#edfaff" font-size="70" font-family="Segoe Script, Segoe UI, cursive" font-style="italic" font-weight="700">LT</text>
+      <text x="176" y="240" fill="#9fe2ff" font-size="16" font-weight="750" letter-spacing="4" text-anchor="middle">CODE · CRAFT · CLARITY</text>
+    </g>
+  </g>
+</svg>

@@ -2,6 +2,24 @@
 
 All notable changes to Kevin Cusnir's multilingual CV are recorded here.
 
+## 1.1.0 — 2026-07-18
+
+### Added
+
+- Static recruiter-first banner shared across the repository README and the
+  English, Spanish and Hebrew CVs.
+- Deterministic 1280 × 640 SVG social-card source and upload-ready PNG.
+- Reproducible Windows rendering command plus visual-asset documentation.
+- Automated checks for banner integration, exact social-card dimensions,
+  sub-1 MB delivery size and verified identity markers.
+
+### Changed
+
+- Unified the CV's public visual identity around Kevin Cusnir, Lirioth
+  Teltanion and the KC ✦ LT signature without changing professional facts.
+- Incremented the CV system from 1.0.0 to 1.1.0 for the coherent visual and
+  recruiter-presentation update.
+
 ## 1.0.0 — 2026-07-18
 
 ### Added

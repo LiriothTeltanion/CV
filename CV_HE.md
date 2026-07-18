@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./assets/cv-banner.svg" width="100%" alt="באנר מקצועי רב־לשוני לקורות החיים של קווין קוסניר, עם הזהות היצירתית Lirioth Teltanion והחתימה KC כוכב LT" />
+</p>
+
 # קווין קוסניר — קורות חיים
 
 **מפתח Frontend ו-Full-Stack ג׳וניור · טכנולוג יצירתי**
