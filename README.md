@@ -1,66 +1,44 @@
-﻿<!-- NOVA-CV-HUB:START -->
 # 📄 Kevin Cusnir — Multilingual Professional CV
 
-This repository is the single canonical home for Kevin's professional CV.
-Choose the language most useful to you:
+This repository is the canonical home for Kevin Cusnir's recruiter-facing CV in three languages.
 
-- [🇬🇧 **English CV** — concise recruiter-ready profile](./CV_EN.md)
-- [🇪🇸 **Currículum en español** — perfil profesional completo](./CV_ES.md)
-- [🇮🇱 **קורות חיים בעברית** — גרסה מקצועית בעברית](./CV_HE.md)
+- [🇬🇧 English CV](./CV_EN.md)
+- [🇪🇸 Currículum en español](./CV_ES.md)
+- [🇮🇱 קורות חיים בעברית](./CV_HE.md)
 
 ## Recruiter overview
 
-Kevin Cusnir is a junior full-stack and frontend developer in Beersheba,
-combining React, TypeScript, JavaScript, Python and SQL with accessible
-multilingual UX, documentation, testing and AI-assisted development workflows.
+Kevin is a junior frontend and full-stack developer in Beersheba who builds React, TypeScript, Python and SQL products with accessible multilingual UX, transparent technical evidence and practical automation.
 
-The CV versions cover:
+His current portfolio demonstrates:
 
-- professional summary and target roles;
-- core technical skills and development tools;
-- Nova Music Lab, NovaFit and other portfolio evidence;
-- Developers Institute full-stack training and current completion work;
-- hospitality, operational and service experience;
-- Spanish, English and Hebrew communication;
-- GitHub, LinkedIn and email contact information.
+- 🎧 **Nova Music Lab** — a live local-first React and TypeScript music-data product;
+- 🇮🇱 **Ivrit Sheli 2.2.0** — a deployed React, FastAPI and PostgreSQL product with 187 automated tests and native Hebrew RTL UX;
+- 💙 **NovaFit 4.2.0** — a tested Python, Tkinter and SQLite desktop product;
+- 🤝 **Christopher Rodríguez Portfolio** — accessible bilingual client/collaboration work;
+- 🌍 professional communication in Spanish, English and Hebrew.
 
-**Professional identity:** Kevin Cusnir  
-**Creative identity:** Lirioth Teltanion  
-**GitHub:** [@LiriothTeltanion](https://github.com/LiriothTeltanion)
+## Identity and verification
 
-Christopher's CV is intentionally maintained in the separate
-`ChristopherRodriguezCVOnline` repository.
-<!-- NOVA-CV-HUB:END -->
+- **Professional identity:** Kevin Cusnir
+- **Creative identity:** Lirioth Teltanion
+- **Target roles:** Junior Frontend Developer · Junior Full-Stack Developer · Creative Technologist
+- **GitHub:** [@LiriothTeltanion](https://github.com/LiriothTeltanion)
+- **LinkedIn:** [Kevin Cusnir](https://www.linkedin.com/in/kevin-cusnir-883173b4/)
+- **Email:** [kevincusnir@gmail.com](mailto:kevincusnir@gmail.com)
 
-# Kevin Cusnir — Multilingual CV
+Public project claims are deliberately scoped to evidence visible in the linked repositories. Education remains **in progress**, and employment dates retain only the broad year ranges currently confirmed by Kevin.
 
-Choose a language:
+## Quality workflow
 
-- [🇬🇧 English — CV_EN.md](./CV_EN.md)
-- [🇪🇸 Español — CV_ES.md](./CV_ES.md)
-- [🇮🇱 עברית — CV_HE.md](./CV_HE.md)
+Run the local verifier before publishing a CV change:
 
-Professional identity: **Kevin Cusnir**  
-Creative identity: **Lirioth Teltanion**  
-GitHub: [@LiriothTeltanion](https://github.com/LiriothTeltanion)
+```powershell
+python tools/verify_cv.py
+```
 
-This repository is the single canonical CV area for Kevin. Christopher's CV
-remains in the separate `ChristopherRodriguezCVOnline` repository.
+The verifier checks identity, contact links, multilingual project parity, version/test evidence, education boundaries and stale Ivrit release claims without network access.
 
----
+**CV system version:** `1.0.0` · **Creative signature:** KC ✦ LT
 
-<!-- NOVA-CV-VERIFICATION:START -->
-## ✅ Portfolio verification & current focus
-
-This CV repository is designed to be easy to verify against real public work:
-
-- **Developer profile:** [github.com/LiriothTeltanion](https://github.com/LiriothTeltanion)
-- **Flagship application:** [Nova Music Lab](https://liriothteltanion.github.io/NovaMusicLab/) — React and TypeScript listening-history analytics
-- **Learning evidence:** [Fullstack2026](https://github.com/LiriothTeltanion/Fullstack2026) — Developers Institute exercises and project progression
-- **Languages:** Spanish, English and Hebrew, including multilingual and RTL interface work
-- **Current focus:** completing the remaining full-stack course work, strengthening deployment readiness and turning agent-assisted development into reviewed, testable portfolio evidence
-
-Each language version is maintained as part of the same professional identity:
-**Kevin Cusnir**, with **Lirioth Teltanion** as the creative identity used across
-music technology, visual systems and experimental product work.
-<!-- NOVA-CV-VERIFICATION:END -->
+> Christopher's CV is maintained separately in the `ChristopherRodriguezCVOnline` repository.

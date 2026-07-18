@@ -1,6 +1,6 @@
-﻿# Kevin Cusnir — Curriculum Vitae
+# Kevin Cusnir — Curriculum Vitae
 
-**Full-Stack Developer · Creative Technologist · AI-Assisted Builder**
+**Junior Frontend & Full-Stack Developer · Creative Technologist**
 
 Beersheba, Israel  
 Email: [kevincusnir@gmail.com](mailto:kevincusnir@gmail.com)  
@@ -9,51 +9,49 @@ LinkedIn: [Kevin Cusnir](https://www.linkedin.com/in/kevin-cusnir-883173b4/)
 
 ## Professional summary
 
-Junior full-stack and frontend developer with practical experience building
-multilingual, accessible and privacy-aware software. I combine React,
-TypeScript, JavaScript and Python development with structured documentation,
-testing, data analysis and AI-assisted workflows. My creative identity,
-**Lirioth Teltanion**, represents my work in music technology, visual
-storytelling and experimental interfaces.
+Junior frontend and full-stack developer building React, TypeScript, Python and SQL products with accessible multilingual UX, data honesty and practical automation. My work spans local-first music analytics, a deployed PostgreSQL learning platform and tested desktop software. **Lirioth Teltanion** is my creative identity for projects connecting engineering with music, visual storytelling and experimental interfaces.
 
 ## Core skills
 
-- React, TypeScript, JavaScript, HTML and CSS
-- Python, SQL, Node.js and API integration
-- Git, GitHub, GitHub Desktop and GitHub Actions
-- Accessible and multilingual interfaces, including RTL layouts
-- Testing, data validation, documentation and deployment workflows
-- AI-assisted development with clear scope, review and safety boundaries
-- Windows troubleshooting, computer repair and system configuration
+- **Languages:** TypeScript, JavaScript, Python and SQL
+- **Frontend:** React, HTML5, CSS3, Vite, accessibility, internationalization and RTL UX
+- **Backend and data:** FastAPI, Node.js fundamentals, REST APIs, PostgreSQL, SQLite and Alembic
+- **Quality and delivery:** Vitest, Testing Library, pytest, integration testing, structured logging, GitHub Actions and Docker
+- **Workflow:** Git, GitHub, GitHub Desktop Beta, documentation-first releases and AI-assisted review with explicit verification
+- **Additional:** Windows troubleshooting, computer repair and system configuration
 
 ## Selected projects
 
 ### Nova Music Lab
 
-React and TypeScript listening-history analytics application supporting
-multiple import formats, multilingual UX, local-first processing, tests and
-automated quality checks.
+A live local-first React and TypeScript music museum that normalizes exports from five listening ecosystems into source-aware analytics, visual stories and a portable personal archive. Includes automated tests, CI and bundle budgets.
 
-### NovaFit
+[Live product](https://liriothteltanion.github.io/NovaMusicLab/) · [Source](https://github.com/LiriothTeltanion/NovaMusicLab)
 
-Python, Tkinter and SQLite desktop application for wellness and activity
-tracking.
+### Ivrit Sheli 2.2.0
 
-### GitHub profile and portfolio
+A deployed trilingual Hebrew-learning product with React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker and Railway. The verified release baseline contains **139 backend + 48 frontend = 187 automated tests**, native Hebrew RTL UX, structured logging and authenticated cloud architecture. The final live OAuth authorization-code exchange remains explicitly under end-to-end verification.
 
-Multilingual public portfolio with accessible visual presentation, project
-evidence, documentation and automated assets.
+[Live product](https://ivritsheli-production.up.railway.app) · [Source](https://github.com/LiriothTeltanion/IvritSheli)
 
-### Christopher Rodriguez CV Online
+### NovaFit 4.2.0
 
-Accessible bilingual React and TypeScript portfolio created for an English
-teacher and collaborator.
+A local-first Python, Tkinter and SQLite wellness intelligence studio with isolated profiles, explainable analytics, verified backups, 12 themes, EN/ES/HE support and a documented **124-test** baseline.
+
+[Live showcase](https://liriothteltanion.github.io/NovaFit/) · [Source](https://github.com/LiriothTeltanion/NovaFit)
+
+### Christopher Rodríguez Portfolio
+
+An accessible bilingual React and TypeScript portfolio created for an educator and collaborator, with structured content, verification states and GitHub Pages delivery.
+
+[Live portfolio](https://liriothteltanion.github.io/ChristopherRodriguezCVOnline/) · [Source](https://github.com/LiriothTeltanion/ChristopherRodriguezCVOnline)
 
 ## Education
 
 **Full-Stack Development Program — Developers Institute, Israel**  
-JavaScript and Python track, 2025–2026. Completion work is currently in
-progress through a structured module and project plan.
+JavaScript and Python track · 2025–2026 · **In progress**
+
+Current coursework covers Python, object-oriented programming, SQL, JavaScript, React, Redux, Node.js, Express, JWT, TypeScript, Git/GitHub and deployment. Completion, graduation and certification are not claimed.
 
 ## Experience
 
@@ -82,5 +80,4 @@ progress through a structured module and project plan.
 
 ## Current direction
 
-Seeking junior full-stack, frontend or creative-technology opportunities where
-mentorship, code review, real users and thoughtful product quality matter.
+Open to junior frontend, full-stack and creative-technology opportunities where mentorship, code review, real users and thoughtful product quality matter.

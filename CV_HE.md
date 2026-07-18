@@ -1,6 +1,6 @@
-﻿# קווין קוסניר — קורות חיים
+# קווין קוסניר — קורות חיים
 
-**מפתח Full-Stack · טכנולוג יצירתי · בונה מוצרים בעזרת כלי בינה מלאכותית**
+**מפתח Frontend ו-Full-Stack ג׳וניור · טכנולוג יצירתי**
 
 באר שבע, ישראל  
 דוא״ל: [kevincusnir@gmail.com](mailto:kevincusnir@gmail.com)  
@@ -9,48 +9,49 @@ LinkedIn: [Kevin Cusnir](https://www.linkedin.com/in/kevin-cusnir-883173b4/)
 
 ## תקציר מקצועי
 
-מפתח Full-Stack ו-Frontend בתחילת הדרך, עם ניסיון מעשי בבניית תוכנה
-רב-לשונית, נגישה ומודעת לפרטיות. אני משלב פיתוח ב-React, TypeScript,
-JavaScript ו-Python עם תיעוד מסודר, בדיקות, ניתוח נתונים ותהליכי עבודה
-בעזרת כלי בינה מלאכותית. הזהות היצירתית שלי, **Lirioth Teltanion**,
-מייצגת את עבודתי בטכנולוגיית מוזיקה, סיפור חזותי וממשקים ניסיוניים.
+מפתח Frontend ו-Full-Stack ג׳וניור שבונה מוצרים ב-React, TypeScript, Python ו-SQL, עם חוויית משתמש נגישה ורב־לשונית, שקיפות בנתונים ואוטומציה מעשית. עבודתי כוללת אנליטיקת מוזיקה בגישת local-first, פלטפורמת למידה פרוסה עם PostgreSQL ותוכנה שולחנית שנבדקה אוטומטית. **Lirioth Teltanion** היא הזהות היצירתית שלי לפרויקטים שמחברים הנדסה, מוזיקה, סיפור חזותי וממשקים ניסיוניים.
 
 ## כישורים מרכזיים
 
-- React, TypeScript, JavaScript, HTML ו-CSS
-- Python, SQL, Node.js ושילוב APIs
-- Git, GitHub, GitHub Desktop ו-GitHub Actions
-- ממשקים נגישים ורב-לשוניים, כולל תמיכה ב-RTL
-- בדיקות, אימות נתונים, תיעוד ותהליכי פריסה
-- פיתוח בעזרת AI עם גבולות ברורים, סקירה ובטיחות
-- פתרון תקלות ב-Windows, תיקון מחשבים והגדרת מערכות
+- **שפות תכנות:** TypeScript, JavaScript, Python ו-SQL
+- **Frontend:** React, HTML5, CSS3, Vite, נגישות, בינאום וחוויית RTL
+- **Backend ונתונים:** FastAPI, יסודות Node.js, ממשקי REST, PostgreSQL, SQLite ו-Alembic
+- **איכות ופריסה:** Vitest, Testing Library, pytest, בדיקות אינטגרציה, לוגים מובנים, GitHub Actions ו-Docker
+- **תהליך עבודה:** Git, GitHub, GitHub Desktop Beta, גרסאות מבוססות תיעוד וסקירה בסיוע AI עם אימות מפורש
+- **נוסף:** פתרון תקלות ב-Windows, תיקון מחשבים והגדרת מערכות
 
 ## פרויקטים נבחרים
 
 ### Nova Music Lab
 
-יישום React ו-TypeScript לניתוח היסטוריית האזנה, עם תמיכה במספר פורמטים,
-ממשק רב-לשוני, עיבוד מקומי, בדיקות ובקרות איכות אוטומטיות.
+מוזיאון מוזיקה חי בגישת local-first, שנבנה ב-React וב-TypeScript. המוצר מנרמל ייצואים מחמש מערכות האזנה לאנליטיקה מודעת למקור, סיפורים חזותיים וארכיון אישי נייד. כולל בדיקות אוטומטיות, CI ותקציבי bundle.
 
-### NovaFit
+[מוצר חי](https://liriothteltanion.github.io/NovaMusicLab/) · [קוד מקור](https://github.com/LiriothTeltanion/NovaMusicLab)
 
-יישום שולחני ב-Python, Tkinter ו-SQLite למעקב אחר רווחה ופעילות.
+### Ivrit Sheli 2.2.0
 
-### פרופיל GitHub ותיק עבודות
+מוצר תלת־לשוני פרוס ללימוד עברית עם React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker ו-Railway. בסיס האימות כולל **139 בדיקות Backend + 48 בדיקות Frontend = 187 בדיקות אוטומטיות**, חוויית RTL טבעית בעברית, לוגים מובנים וארכיטקטורת ענן מאומתת. החלפת קוד ההרשאה הסופית של OAuth בסביבה החיה עדיין מסומנת במפורש כממתינה לאימות מקצה לקצה.
 
-תיק עבודות ציבורי ורב-לשוני עם הצגה נגישה, הוכחות לפרויקטים, תיעוד
-ונכסים אוטומטיים.
+[מוצר חי](https://ivritsheli-production.up.railway.app) · [קוד מקור](https://github.com/LiriothTeltanion/IvritSheli)
 
-### Christopher Rodriguez CV Online
+### NovaFit 4.2.0
 
-תיק עבודות נגיש ודו-לשוני ב-React ו-TypeScript שנבנה עבור מורה לאנגלית
-ושותף לפרויקט.
+סטודיו local-first לאינטליגנציית רווחה ב-Python, Tkinter ו-SQLite, עם פרופילים מבודדים, אנליטיקה מוסברת, גיבויים מאומתים, 12 ערכות נושא, תמיכה ב-EN/ES/HE ובסיס מתועד של **124 בדיקות**.
+
+[הדגמה חיה](https://liriothteltanion.github.io/NovaFit/) · [קוד מקור](https://github.com/LiriothTeltanion/NovaFit)
+
+### Christopher Rodríguez Portfolio
+
+תיק עבודות נגיש ודו־לשוני ב-React וב-TypeScript, שנבנה עבור איש חינוך ושותף לפרויקט, עם תוכן מובנה, מצבי אימות ופריסה ב-GitHub Pages.
+
+[תיק עבודות חי](https://liriothteltanion.github.io/ChristopherRodriguezCVOnline/) · [קוד מקור](https://github.com/LiriothTeltanion/ChristopherRodriguezCVOnline)
 
 ## השכלה
 
 **תוכנית פיתוח Full-Stack — Developers Institute, ישראל**  
-מסלול JavaScript ו-Python, בשנים 2025–2026. השלמת המודולים והפרויקטים
-האחרונים מתבצעת כעת באמצעות תוכנית עבודה מסודרת.
+מסלול JavaScript ו-Python · 2025–2026 · **בתהליך**
+
+הלימודים הנוכחיים כוללים Python, תכנות מונחה עצמים, SQL, JavaScript, React, Redux, Node.js, Express, JWT, TypeScript, Git/GitHub ופריסה. אין כאן טענה לסיום, לתעודת גמר או להסמכה.
 
 ## ניסיון תעסוקתי
 
@@ -69,7 +70,7 @@ JavaScript ו-Python עם תיעוד מסודר, בדיקות, ניתוח נתו
 **ניסיון שירות נוסף — באר שבע**
 
 - סיוע ותמיכה לאנשים מבוגרים.
-- תקשורת מעשית בספרדית, אנגלית ועברית.
+- תקשורת מעשית בספרדית, אנגלית ובעברית.
 
 ## שפות
 
@@ -79,5 +80,4 @@ JavaScript ו-Python עם תיעוד מסודר, בדיקות, ניתוח נתו
 
 ## כיוון מקצועי
 
-מחפש הזדמנות התחלתית ב-Full-Stack, Frontend או טכנולוגיה יצירתית, עם
-חניכה, ביקורת קוד, משתמשים אמיתיים ודגש על איכות מוצר.
+פתוח להזדמנויות ג׳וניור ב-Frontend, ב-Full-Stack ובטכנולוגיה יצירתית, בצוות שמעריך חניכה, ביקורת קוד, משתמשים אמיתיים ואיכות מוצר.
