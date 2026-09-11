@@ -32,11 +32,11 @@ LinkedIn: [Kevin Cusnir](https://www.linkedin.com/in/kevin-cusnir-883173b4/)
 
 [מוצר חי](https://liriothteltanion.github.io/NovaMusicLab/) · [קוד מקור](https://github.com/LiriothTeltanion/NovaMusicLab)
 
-### Ivrit Sheli 2.2.0
+### Ivrit Sheli 2.12.3
 
-מוצר תלת־לשוני פרוס ללימוד עברית עם React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker ו-Railway. בסיס האימות כולל **139 בדיקות Backend + 48 בדיקות Frontend = 187 בדיקות אוטומטיות**, חוויית RTL טבעית בעברית, לוגים מובנים וארכיטקטורת ענן מאומתת. החלפת קוד ההרשאה הסופית של OAuth בסביבה החיה עדיין מסומנת במפורש כממתינה לאימות מקצה לקצה.
+מוצר תלת־לשוני פרוס ללימוד עברית עם React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker ו-Render. בסיס האימות כולל **139 בדיקות Backend + 48 בדיקות Frontend = 187 בדיקות אוטומטיות**, חוויית RTL טבעית בעברית, לוגים מובנים וארכיטקטורת ענן מאומתת. החלפת קוד ההרשאה הסופית של OAuth בסביבה החיה עדיין מסומנת במפורש כממתינה לאימות מקצה לקצה.
 
-[מוצר חי](https://ivritsheli-production.up.railway.app) · [קוד מקור](https://github.com/LiriothTeltanion/IvritSheli)
+[מוצר חי](https://ivrit-sheli-staging.onrender.com) · [קוד מקור](https://github.com/LiriothTeltanion/IvritSheli)
 
 ### NovaFit 4.2.0
 
