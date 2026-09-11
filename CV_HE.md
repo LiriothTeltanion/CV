@@ -34,7 +34,7 @@ LinkedIn: [Kevin Cusnir](https://www.linkedin.com/in/kevin-cusnir-883173b4/)
 
 ### Ivrit Sheli 2.12.3
 
-מוצר תלת־לשוני פרוס ללימוד עברית עם React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker ו-Render. בסיס האימות של גרסה 2.12.3 כולל **859 בדיקות Frontend + 387 בדיקות Backend = 1,246 בדיקות אוטומטיות**, לצד מטריצת Playwright רב־דפדפנים, בדיקות טיפוסים קפדניות עם MyPy ו-Ruff, חוויית RTL טבעית בעברית ולוגים מובנים עם הסתרת סודות מאומתת. כניסה עם Google ממומשת וממתינה להגדרת כתובת ההפניה בסביבה הנוכחית; הסיור לקריאה בלבד פועל ללא חשבון.
+מוצר תלת־לשוני פרוס ללימוד עברית עם React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker ו-Render. בסיס האימות של גרסה 2.12.3 כולל **859 בדיקות Frontend + 387 בדיקות Backend = 1,246 בדיקות אוטומטיות**, לצד מטריצת Playwright רב־דפדפנים, בדיקות טיפוסים קפדניות עם MyPy ו-Ruff, חוויית RTL טבעית בעברית ולוגים מובנים עם הסתרת סודות מאומתת. כניסה עם Google פעילה; בדיקת הבידוד בין שני חשבונות אמיתיים היא הפריט היחיד שעדיין מסומן כלא מאומת.
 
 [מוצר חי](https://ivrit-sheli-staging.onrender.com) · [קוד מקור](https://github.com/LiriothTeltanion/IvritSheli)
 
