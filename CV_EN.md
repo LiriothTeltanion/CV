@@ -34,7 +34,7 @@ A live local-first React and TypeScript music museum that normalizes exports fro
 
 ### Ivrit Sheli 2.12.3
 
-A deployed trilingual Hebrew-learning product with React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker and Render. The verified release baseline contains **139 backend + 48 frontend = 187 automated tests**, native Hebrew RTL UX, structured logging and authenticated cloud architecture. The final live OAuth authorization-code exchange remains explicitly under end-to-end verification.
+A deployed trilingual Hebrew-learning product with React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker and Render. The verified 2.12.3 baseline contains **859 frontend + 387 backend = 1,246 automated tests**, plus a cross-browser Playwright matrix, strict MyPy and Ruff type checking, native Hebrew RTL UX, and structured logging with verified secret redaction. Google sign-in is implemented and awaits redirect-URI configuration on the current host; the read-only tour works without an account.
 
 [Live product](https://ivrit-sheli-staging.onrender.com) · [Source](https://github.com/LiriothTeltanion/IvritSheli)
 
