@@ -48,6 +48,6 @@ python tools/verify_cv.py
 
 The verifier checks identity, contact links, multilingual project parity, version/test evidence, education boundaries and stale Ivrit release claims without network access.
 
-**CV system version:** `1.1.0` · **Creative signature:** KC ✦ LT
+**CV system version:** `1.2.0` · **Creative signature:** KC ✦ LT
 
 > Christopher's CV is maintained separately in the `ChristopherRodriguezCVOnline` repository.
