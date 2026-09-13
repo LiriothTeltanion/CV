@@ -19,16 +19,22 @@ REQUIRED_COMMON = (
     "https://github.com/LiriothTeltanion",
     "https://www.linkedin.com/in/kevin-cusnir-883173b4/",
     "Nova Music Lab",
-    "Ivrit Sheli 2.2.0",
     "NovaFit 4.2.0",
     "Christopher Rodríguez Portfolio",
-    "139",
-    "48",
-    "187",
-    "OAuth",
+    "Google",
     "2025–2026",
 )
-STALE_IVRIT_MARKERS = ("Ivrit Sheli 2.1.0", "127 automated tests", "127 pruebas", "127 בדיקות")
+# La version de Ivrit Sheli y sus cifras de pruebas ya no se fijan aqui. Clavar
+# "Ivrit Sheli 2.2.0" dejo esta comprobacion en rojo dos dias mientras los tres
+# CV decian 2.12.3, que era lo correcto: fallaba el vigilante, no el contenido.
+# En su lugar se exige que los tres coincidan y que la version no este superada.
+STALE_IVRIT_MARKERS = ("127 automated tests", "127 pruebas", "127 בדיקות")
+IVRIT_HEADING = re.compile(r"Ivrit Sheli (\d+\.\d+\.\d+)")
+SUPERSEDED_IVRIT_VERSIONS = ("2.1.0", "2.2.0", "2.4.0")
+IVRIT_TEST_FIGURES = ("859", "387")
+# Un despliegue retirado en un CV es un 404 delante de un reclutador. El servicio
+# de Singapur se borro el 13 sep 2026 y los tres CV siguieron apuntando a el.
+RETIRED_DEPLOYMENTS = ("ivrit-sheli-staging.onrender.com", "railway.app")
 CV_BANNER = ROOT / "assets" / "cv-banner.svg"
 SOCIAL_SVG = ROOT / "assets" / "social" / "cv-social-preview.svg"
 SOCIAL_PNG = ROOT / "assets" / "social" / "cv-social-preview.png"
@@ -89,10 +95,43 @@ def main() -> int:
         if len(re.findall(r"(?m)^# [^#]", text)) != 1:
             fail(f"{CV_FILES[language].name} must contain exactly one top-level title")
 
+    versions: dict[str, str] = {}
+    for language, text in texts.items():
+        named = set(IVRIT_HEADING.findall(text))
+        if len(named) != 1:
+            fail(
+                f"{CV_FILES[language].name} must name exactly one Ivrit Sheli "
+                f"version, found {sorted(named)}"
+            )
+        versions[language] = named.pop()
+    if len(set(versions.values())) != 1:
+        fail(f"The three CVs disagree on the Ivrit Sheli version: {versions}")
+    ivrit_version = next(iter(versions.values()))
+    if ivrit_version in SUPERSEDED_IVRIT_VERSIONS:
+        fail(
+            f"Ivrit Sheli {ivrit_version} is superseded; the CV must state the "
+            "version the project actually publishes"
+        )
+    for language, text in texts.items():
+        for figure in IVRIT_TEST_FIGURES:
+            if figure not in text:
+                fail(f"{CV_FILES[language].name} is missing the {figure}-test figure")
+
+    for label, text in (
+        ("README.md", readme),
+        *((CV_FILES[language].name, text) for language, text in texts.items()),
+    ):
+        for host in RETIRED_DEPLOYMENTS:
+            if host in text:
+                fail(f"{label} still points at the retired deployment {host!r}")
+
     language_markers = {
-        "en": ("Junior Frontend & Full-Stack Developer", "In progress", "not claimed", "under end-to-end verification"),
-        "es": ("Frontend y Full-Stack Junior", "En progreso", "No se afirma", "pendiente de verificación integral"),
-        "he": ("Full-Stack ג׳וניור", "בתהליך", "אין כאן טענה", "ממתינה לאימות מקצה לקצה"),
+        # La ultima marca de cada idioma es el limite de honestidad: lo que el CV
+        # reconoce que NO esta verificado. La redaccion cambio cuando Google
+        # sign-in paso a operativo y solo quedo el aislamiento entre dos cuentas.
+        "en": ("Junior Frontend & Full-Stack Developer", "In progress", "not claimed", "still listed as unverified"),
+        "es": ("Frontend y Full-Stack Junior", "En progreso", "No se afirma", "sigue figurando como no verificado"),
+        "he": ("Full-Stack ג׳וניור", "בתהליך", "אין כאן טענה", "עדיין מסומן כלא מאומת"),
     }
     for language, markers in language_markers.items():
         for marker in markers:
@@ -122,7 +161,8 @@ def main() -> int:
         fail(f"Social preview must stay below {MAX_SOCIAL_BYTES} bytes")
 
     print(
-        f"[OK] CV system {version}: EN/ES/HE identity, projects, evidence, "
+        f"[OK] CV system {version}: EN/ES/HE identity, projects, Ivrit Sheli "
+        f"{ivrit_version} agreed across all three, no retired deployment, "
         f"boundaries and {dimensions[0]}x{dimensions[1]} visual assets verified"
     )
     return 0

@@ -2,6 +2,33 @@
 
 All notable changes to Kevin Cusnir's multilingual CV are recorded here.
 
+## 1.2.0 — 2026-09-13
+
+### Fixed
+
+- **The live product link was a 404 in all three languages.** The CVs pointed at
+  `ivrit-sheli-staging.onrender.com`, the Singapore service retired on
+  2026-09-13 when the project finished moving to Frankfurt. A recruiter clicking
+  the one link that shows the work got nothing. All three now point at
+  `ivrit-sheli.onrender.com`, verified answering HTTP 200.
+- The verifier had been red since 2026-09-11 because it required the literal
+  string `Ivrit Sheli 2.2.0` while the three CVs correctly said 2.12.3. The
+  content was right; the check was stale. It also pinned the old test figures
+  139, 48 and 187, and the word `OAuth`, which disappeared when the sign-in
+  sentence was rewritten.
+- The honesty boundary markers still looked for the old wording. Google sign-in
+  is live now and the two-real-account isolation check is the one open item, so
+  the markers follow that sentence in each language.
+
+### Changed
+
+- The Ivrit Sheli version is no longer written into the verifier. It requires
+  the three CVs to **agree** on one version, refuses a superseded one, and
+  checks the 859 and 387 test figures appear in each. A number pinned in two
+  places goes stale in one of them.
+- New check: no CV or README may name a retired deployment host. That is the
+  rule that would have caught this on the day the service was deleted.
+
 ## 1.1.0 — 2026-07-18
 
 ### Added
