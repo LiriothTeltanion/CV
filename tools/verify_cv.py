@@ -32,8 +32,8 @@ STALE_IVRIT_MARKERS = ("127 automated tests", "127 pruebas", "127 בדיקות")
 IVRIT_HEADING = re.compile(r"Ivrit Sheli (\d+\.\d+\.\d+)")
 SUPERSEDED_IVRIT_VERSIONS = ("2.1.0", "2.2.0", "2.4.0")
 IVRIT_TEST_FIGURES = ("859", "387")
-# Un despliegue retirado en un CV es un 404 delante de un reclutador. El servicio
-# de Singapur se borro el 13 sep 2026 y los tres CV siguieron apuntando a el.
+# A retired deployment in a CV is a 404 in front of a recruiter. The Singapore
+# service was deleted on 2026-09-13 and all three CVs kept pointing at it.
 RETIRED_DEPLOYMENTS = ("ivrit-sheli-staging.onrender.com", "railway.app")
 CV_BANNER = ROOT / "assets" / "cv-banner.svg"
 SOCIAL_SVG = ROOT / "assets" / "social" / "cv-social-preview.svg"
