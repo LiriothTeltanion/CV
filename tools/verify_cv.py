@@ -24,16 +24,16 @@ REQUIRED_COMMON = (
     "Google",
     "2025–2026",
 )
-# La version de Ivrit Sheli y sus cifras de pruebas ya no se fijan aqui. Clavar
-# "Ivrit Sheli 2.2.0" dejo esta comprobacion en rojo dos dias mientras los tres
-# CV decian 2.12.3, que era lo correcto: fallaba el vigilante, no el contenido.
-# En su lugar se exige que los tres coincidan y que la version no este superada.
+# The Ivrit Sheli version and its test counts are no longer pinned here.
+# Hard-coding "Ivrit Sheli 2.2.0" kept this check red for two days while all
+# three CVs said 2.12.3, which was correct: the watchdog failed, not the content.
+# Instead, all three must agree and the version must not be superseded.
 STALE_IVRIT_MARKERS = ("127 automated tests", "127 pruebas", "127 בדיקות")
 IVRIT_HEADING = re.compile(r"Ivrit Sheli (\d+\.\d+\.\d+)")
 SUPERSEDED_IVRIT_VERSIONS = ("2.1.0", "2.2.0", "2.4.0")
 IVRIT_TEST_FIGURES = ("859", "387")
-# Un despliegue retirado en un CV es un 404 delante de un reclutador. El servicio
-# de Singapur se borro el 13 sep 2026 y los tres CV siguieron apuntando a el.
+# A retired deployment in a CV is a 404 in front of a recruiter. The Singapore
+# service was deleted on 2026-09-13 and all three CVs kept pointing at it.
 RETIRED_DEPLOYMENTS = ("ivrit-sheli-staging.onrender.com", "railway.app")
 CV_BANNER = ROOT / "assets" / "cv-banner.svg"
 SOCIAL_SVG = ROOT / "assets" / "social" / "cv-social-preview.svg"
@@ -126,9 +126,9 @@ def main() -> int:
                 fail(f"{label} still points at the retired deployment {host!r}")
 
     language_markers = {
-        # La ultima marca de cada idioma es el limite de honestidad: lo que el CV
-        # reconoce que NO esta verificado. La redaccion cambio cuando Google
-        # sign-in paso a operativo y solo quedo el aislamiento entre dos cuentas.
+        # Each language's last marker is the honesty limit: what the CV admits is
+        # NOT verified. The wording changed when Google sign-in became operational
+        # and only the isolation between two accounts remained.
         "en": ("Junior Frontend & Full-Stack Developer", "In progress", "not claimed", "still listed as unverified"),
         "es": ("Frontend y Full-Stack Junior", "En progreso", "No se afirma", "sigue figurando como no verificado"),
         "he": ("Full-Stack ג׳וניור", "בתהליך", "אין כאן טענה", "עדיין מסומן כלא מאומת"),

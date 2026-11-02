@@ -1,0 +1,58 @@
+name: Dependabot auto-merge
+
+# Patch and minor updates merge on their own once the branch's required checks
+# pass: those checks are the reviewer.
+#
+# These always wait for Kevin:
+# - major versions, because they can break things the tests do not see
+#   (Tailwind 4 built and passed the tests but lost the custom colours);
+# - any update whose package maintainer changed, the typical pattern of a
+#   supply-chain attack.
+#
+# This workflow only ARMS auto-merge. If a check fails, GitHub merges nothing:
+# this file cannot skip a quality gate.
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  arm-auto-merge:
+    name: Arm auto-merge for safe Dependabot updates
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository_owner == 'LiriothTeltanion'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Read Dependabot metadata
+        id: meta
+        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98 # v3.1.0
+
+      - name: Arm auto-merge for patch, minor and digest updates
+        if: >-
+          steps.meta.outputs.update-type != 'version-update:semver-major'
+          && steps.meta.outputs.maintainer-changes != 'true'
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Leave major updates and maintainer changes for Kevin
+        if: >-
+          steps.meta.outputs.update-type == 'version-update:semver-major'
+          || steps.meta.outputs.maintainer-changes == 'true'
+        # Values arrive through environment variables, never interpolated into
+        # the script: a package name must not be able to run as shell.
+        run: >-
+          echo "::notice title=Waiting for Kevin::$NAMES $FROM -> $TO
+          ($KIND, maintainer changed: $MAINTAINER)"
+        env:
+          NAMES: ${{ steps.meta.outputs.dependency-names }}
+          FROM: ${{ steps.meta.outputs.previous-version }}
+          TO: ${{ steps.meta.outputs.new-version }}
+          KIND: ${{ steps.meta.outputs.update-type }}
+          MAINTAINER: ${{ steps.meta.outputs.maintainer-changes }}
