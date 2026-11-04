@@ -4,6 +4,10 @@ Guide for every coding agent (Claude Code, Codex, Copilot, Cursor, Gemini)
 and human contributor working in this repository. Read it before your first
 edit. `CLAUDE.md` imports this file.
 
+Local, private context for this repo may exist in `AGENTS.local.md` and
+`CLAUDE.local.md`. They are git-ignored, never committed, and should be read
+when present.
+
 This public repository is the canonical, recruiter-facing CV of **Kevin
 Cusnir** in English, Spanish and Hebrew (`CV_EN.md`, `CV_ES.md`, `CV_HE.md`),
 with **Lirioth Teltanion** kept as his creative identity. All three languages
@@ -173,8 +177,10 @@ Sheli 2.2.0) while the CVs say 2.12.3, and IvritSheli has since released
   If a section above defines a different body format for this repository,
   that one wins.
 
-  Commits written with an AI assistant add the matching `Co-Authored-By:`
-  trailer. Lirioth is never a co-author.
+  Commit authorship: every commit, PR title and PR description is authored
+  by Kevin Cusnir (Lirioth Teltanion). Do not add AI co-author trailers,
+  "Generated with/by" footers, session links or AI tool or model names to
+  Git metadata. (Policy updated 2026-11-04.)
 - **Author identity:** `Kevin Cusnir (Lirioth Teltanion)`.
 - One concern per commit and per pull request. Small vertical slices that can
   ship on their own beat big rewrites.
