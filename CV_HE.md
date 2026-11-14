@@ -32,11 +32,11 @@ LinkedIn: [Kevin Cusnir](https://www.linkedin.com/in/kevin-cusnir-883173b4/)
 
 [מוצר חי](https://liriothteltanion.github.io/NovaMusicLab/) · [קוד מקור](https://github.com/LiriothTeltanion/NovaMusicLab)
 
-### Ivrit Sheli 2.12.3
+### Ivrit Sheli 2.13.0
 
-מוצר תלת־לשוני פרוס ללימוד עברית עם React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker ו-Render. בסיס האימות של גרסה 2.12.3 כולל **859 בדיקות Frontend + 387 בדיקות Backend = 1,246 בדיקות אוטומטיות**, לצד מטריצת Playwright רב־דפדפנים, בדיקות טיפוסים קפדניות עם MyPy ו-Ruff, חוויית RTL טבעית בעברית ולוגים מובנים עם הסתרת סודות מאומתת. כניסה עם Google פעילה; בדיקת הבידוד בין שני חשבונות אמיתיים היא הפריט היחיד שעדיין מסומן כלא מאומת.
+מוצר תלת־לשוני ללימוד עברית עם React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker ו-Render. גרסת קוד המקור שפורסמה, 2.13.0, מתעדת **1,096 בדיקות Frontend + 434 בדיקות Backend = 1,530 בדיקות אוטומטיות** ביומן האימות המקומי מ־2 בנובמבר 2026, עם חוויית RTL טבעית בעברית. השירות המאוחסן הוא staging לפיילוט פרטי, לא production, ונפרס ידנית. כניסה עם Google אומתה ידנית בפריסה זו; GitHub OAuth חי, אינטגרציית PostgreSQL, אישור דוברי עברית והפיילוט עם הלומד הראשון נשארו שערי אימות נפרדים. דוח הבדיקות במאגר מפרט תאריכים והיקף.
 
-[מוצר חי](https://ivrit-sheli.onrender.com) · [קוד מקור](https://github.com/LiriothTeltanion/IvritSheli)
+[הדגמת staging](https://ivrit-sheli.onrender.com) · [קוד מקור](https://github.com/LiriothTeltanion/IvritSheli)
 
 ### NovaFit 4.2.0
 
