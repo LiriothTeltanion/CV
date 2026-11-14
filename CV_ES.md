@@ -32,11 +32,11 @@ Museo musical local-first en React y TypeScript que normaliza exportaciones de c
 
 [Producto en vivo](https://liriothteltanion.github.io/NovaMusicLab/) · [Código](https://github.com/LiriothTeltanion/NovaMusicLab)
 
-### Ivrit Sheli 2.12.3
+### Ivrit Sheli 2.13.0
 
-Producto desplegado y trilingue para aprender hebreo con React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker y Render. La base verificada de la version 2.12.3 contiene **859 pruebas de frontend + 387 de backend = 1.246 pruebas automatizadas**, ademas de una matriz Playwright multinavegador, tipado estricto con MyPy y Ruff, UX RTL nativa en hebreo y logging estructurado con redaccion de secretos verificada. El inicio de sesion con Google esta operativo; la prueba de aislamiento entre dos cuentas reales es lo unico que sigue figurando como no verificado.
+Producto trilingüe para aprender hebreo con React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker y Render. La versión publicada del código 2.13.0 documenta **1.096 pruebas de frontend + 434 de backend = 1.530 pruebas automatizadas** en su registro de verificación local del 2 de noviembre de 2026, con UX RTL nativa en hebreo. El servicio alojado es staging de un piloto privado, no producción, y se despliega manualmente. El inicio de sesión con Google se verificó manualmente en ese despliegue; GitHub OAuth en vivo, la integración con PostgreSQL, la aceptación por hablantes nativos y el piloto con el primer estudiante siguen como verificaciones separadas. El informe de pruebas del código detalla fechas y alcance.
 
-[Producto en vivo](https://ivrit-sheli.onrender.com) · [Código](https://github.com/LiriothTeltanion/IvritSheli)
+[Demo en staging](https://ivrit-sheli.onrender.com) · [Código](https://github.com/LiriothTeltanion/IvritSheli)
 
 ### NovaFit 4.2.0
 
