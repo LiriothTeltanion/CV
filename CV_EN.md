@@ -32,11 +32,11 @@ A live local-first React and TypeScript music museum that normalizes exports fro
 
 [Live product](https://liriothteltanion.github.io/NovaMusicLab/) · [Source](https://github.com/LiriothTeltanion/NovaMusicLab)
 
-### Ivrit Sheli 2.12.3
+### Ivrit Sheli 2.13.0
 
-A deployed trilingual Hebrew-learning product with React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker and Render. The verified 2.12.3 baseline contains **859 frontend + 387 backend = 1,246 automated tests**, plus a cross-browser Playwright matrix, strict MyPy and Ruff type checking, native Hebrew RTL UX, and structured logging with verified secret redaction. Google sign-in is live; the two-real-account isolation check is the one item still listed as unverified.
+A trilingual Hebrew-learning product with React, TypeScript, FastAPI, PostgreSQL, Alembic, Docker and Render. The published 2.13.0 source release documents **1,096 frontend + 434 backend = 1,530 automated tests** in its November 2, 2026 local verification ledger, with native Hebrew RTL UX. The hosted service is private-pilot staging, not production, and is manually redeployed. Google sign-in was manually verified on that deployment; live GitHub OAuth, PostgreSQL integration, native-speaker acceptance and the first-learner pilot remain separate verification gates. See the source test report for dated evidence and scope.
 
-[Live product](https://ivrit-sheli.onrender.com) · [Source](https://github.com/LiriothTeltanion/IvritSheli)
+[Staging demo](https://ivrit-sheli.onrender.com) · [Source](https://github.com/LiriothTeltanion/IvritSheli)
 
 ### NovaFit 4.2.0
 
