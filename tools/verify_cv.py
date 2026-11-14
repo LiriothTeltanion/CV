@@ -31,7 +31,8 @@ REQUIRED_COMMON = (
 STALE_IVRIT_MARKERS = ("127 automated tests", "127 pruebas", "127 בדיקות")
 IVRIT_HEADING = re.compile(r"Ivrit Sheli (\d+\.\d+\.\d+)")
 SUPERSEDED_IVRIT_VERSIONS = ("2.1.0", "2.2.0", "2.4.0")
-IVRIT_TEST_FIGURES = ("859", "387")
+IVRIT_TEST_FIGURES = ("434",)
+IVRIT_FRONTEND_TOTALS = {"en": ("1,096", "1,530"), "es": ("1.096", "1.530"), "he": ("1,096", "1,530")}
 # A retired deployment in a CV is a 404 in front of a recruiter. The Singapore
 # service was deleted on 2026-09-13 and all three CVs kept pointing at it.
 RETIRED_DEPLOYMENTS = ("ivrit-sheli-staging.onrender.com", "railway.app")
@@ -112,8 +113,10 @@ def main() -> int:
             f"Ivrit Sheli {ivrit_version} is superseded; the CV must state the "
             "version the project actually publishes"
         )
+    if set(IVRIT_HEADING.findall(readme)) != {ivrit_version}:
+        fail("README and the three CVs disagree on the Ivrit Sheli version")
     for language, text in texts.items():
-        for figure in IVRIT_TEST_FIGURES:
+        for figure in (*IVRIT_TEST_FIGURES, *IVRIT_FRONTEND_TOTALS[language]):
             if figure not in text:
                 fail(f"{CV_FILES[language].name} is missing the {figure}-test figure")
 
@@ -126,12 +129,10 @@ def main() -> int:
                 fail(f"{label} still points at the retired deployment {host!r}")
 
     language_markers = {
-        # Each language's last marker is the honesty limit: what the CV admits is
-        # NOT verified. The wording changed when Google sign-in became operational
-        # and only the isolation between two accounts remained.
-        "en": ("Junior Frontend & Full-Stack Developer", "In progress", "not claimed", "still listed as unverified"),
-        "es": ("Frontend y Full-Stack Junior", "En progreso", "No se afirma", "sigue figurando como no verificado"),
-        "he": ("Full-Stack ג׳וניור", "בתהליך", "אין כאן טענה", "עדיין מסומן כלא מאומת"),
+        # Each language must preserve the documented staging verification boundaries.
+        "en": ("Junior Frontend & Full-Stack Developer", "In progress", "not claimed", "remain separate verification gates"),
+        "es": ("Frontend y Full-Stack Junior", "En progreso", "No se afirma", "siguen como verificaciones separadas"),
+        "he": ("Full-Stack ג׳וניור", "בתהליך", "אין כאן טענה", "נשארו שערי אימות נפרדים"),
     }
     for language, markers in language_markers.items():
         for marker in markers:

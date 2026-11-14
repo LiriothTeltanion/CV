@@ -22,7 +22,7 @@ Kevin is a junior frontend and full-stack developer in Beersheba who builds Reac
 His current portfolio demonstrates:
 
 - 🎧 **Nova Music Lab** — a live local-first React and TypeScript music-data product;
-- 🇮🇱 **Ivrit Sheli 2.2.0** — a deployed React, FastAPI and PostgreSQL product with 187 automated tests and native Hebrew RTL UX;
+- 🇮🇱 **Ivrit Sheli 2.13.0** — a React, FastAPI and PostgreSQL product with a documented 1,530-test local baseline, native Hebrew RTL UX and a private-pilot staging deployment, not production;
 - 💙 **NovaFit 4.2.0** — a tested Python, Tkinter and SQLite desktop product;
 - 🤝 **Christopher Rodríguez Portfolio** — accessible bilingual client/collaboration work;
 - 🌍 professional communication in Spanish, English and Hebrew.
